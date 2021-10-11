@@ -25,7 +25,7 @@ module Tumblr
         conn.request :multipart
         conn.request :url_encoded
         conn.response :json, :content_type => /\bjson$/
-        conn.adapter client
+        # conn.adapter client
       end
     end
 
